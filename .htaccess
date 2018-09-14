@@ -1,0 +1,16 @@
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh|txt)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+RewriteEngine on
+RewriteRule start index.php
+RewriteRule zaloguj-sie logowanie.php
+RewriteRule wyloguj logout.php
+RewriteRule udana-rejestracja udanarej.php
+RewriteRule rejestracja zarejestruj.php
+RewriteRule zmiana-hasla zmianahash.php
+RewriteRule dodanie-wpisu dodaniewpisu.php
+RewriteRule zatwierdzanie-wpisu potwierdzanie.php
+RewriteRule moje-wpisy edycja.php
+RewriteRule edycja-wpisu editwpis.php
+RewriteRule blokowanie-wpisu block.php
