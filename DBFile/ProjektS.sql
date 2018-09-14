@@ -63,6 +63,9 @@ CREATE TABLE `wpisy` (
 -- Zrzut danych tabeli `wpisy`
 --
 
+INSERT INTO `wpisy` (`id`, `ida`, `tytul`, `datau`, `datam`, `kategoria`, `public`) VALUES
+(1, 1, 'Pierwszy wpis! :p', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'Aktualności', 1);
+
 --
 -- Indeksy dla zrzutów tabel
 --
